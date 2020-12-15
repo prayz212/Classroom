@@ -1,0 +1,484 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+/*Thẻ chứa nội dung (Tri)*/
+
+#container {
+    min-height: 100%;
+    position: relative;
+    background-color: #F0F2F5;
+}
+
+
+/*start header css*/
+
+.my-header {
+    height: 64px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.more-icon {
+    margin: 8px 8px;
+}
+
+.ic-more-div {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.ic-more-div .display-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: darkgrey;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    top: 110%;
+    left: 50%;
+    margin-left: -20px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.ic-more-div:hover {
+    background-color: #f1f1f1;
+}
+
+.ic-more-div:hover .display-text {
+    visibility: visible;
+}
+
+.banner {
+    height: 40px;
+}
+
+.ic-user-div {
+    height: 40px;
+    width: 40px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.add-icon {
+    margin: 7px 7px;
+}
+
+.ic-add-div {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.ic-add-div .display-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: darkgrey;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    top: 110%;
+    margin-left: -40px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.ic-add-div:hover {
+    background-color: #f1f1f1;
+}
+
+.ic-add-div:hover .display-text {
+    visibility: visible;
+}
+
+
+/*end header css*/
+
+
+/*start container css*/
+
+.card-div {
+    width: 302px;
+    height: 294px;
+}
+
+.my-card {
+    cursor: pointer;
+}
+
+.my-card .my-card-header {
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    background-image: url("./imgs/img_graduation.jpg");
+    border: 1px solid gainsboro;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.my-card .my-card-body {
+    width: 300px;
+    height: 137px;
+    border: 1px solid gainsboro;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.my-card .my-card-footer {
+    width: 300px;
+    height: 57px;
+    background-color: cadetblue;
+    border: 1px solid gainsboro;
+}
+
+.header-top a {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 250px;
+    color: white;
+    font-size: 22px;
+    overflow: hidden
+}
+
+.header-top a:hover {
+    color: white;
+}
+
+.three-dots-icon path {
+    fill: white;
+}
+
+.ic-three-dots-div:hover {
+    background-color: #beb8b8;
+    opacity: 0.7;
+}
+
+.header-bottom div {
+    width: 250px;
+    color: white;
+    font-size: 14px;
+}
+
+.teacher-avatar {
+    margin-left: 65%;
+    margin-top: -15%;
+    width: 75px;
+    height: 75px;
+}
+
+.body-content {
+    margin-top: -10%;
+}
+
+.body-content h6 {
+    color: #6b6969;
+    font-size: 12px;
+}
+
+.body-content a {
+    color: black;
+    font-size: 15px;
+}
+
+.body-content a:hover {
+    color: black;
+}
+
+
+/*-------------------------------TRI---------------------------*/
+
+.user-icon {
+    margin: 7px 7px;
+}
+
+.class-link:hover span {
+    color: rgb(66, 133, 244);
+}
+
+
+/*Tạo đường kẻ ở dưới đáy*/
+
+.my-header {
+    height: 64px;
+    border-block-end: 1px solid #d0d0d0;
+}
+
+
+/*Logo*/
+
+.logo-img {
+    width: 70px;
+    height: 35px;
+}
+
+.logo-text {
+    color: dimgrey;
+    font-size: 24px;
+}
+
+@media (max-width: 330px) {
+    .logo-text {
+        font-size: 16px;
+    }
+}
+
+
+/*Login*/
+
+#form-login {
+    width: auto;
+    margin: 30px auto;
+}
+
+.btn-login {
+    width: 100%;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+}
+
+#error-mess {
+    color: #E8171F;
+}
+
+.btn-create-account {
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42B72A;
+    color: white;
+}
+
+.header-login {
+    padding-top: 72px;
+    padding-bottom: 30px;
+}
+
+.line-content-login {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 36px;
+    max-width: 525px;
+    text-align: justify;
+}
+
+
+/* Register */
+
+#form-register {
+    width: 30%;
+    min-width: 400px;
+    margin: 30px auto;
+}
+
+.content {
+    margin: 30px auto;
+    padding: 10px 0px 50px;
+    min-width: 450px;
+    width: 40%;
+    background-color: white;
+}
+
+.btn-register {
+    min-width: 400px;
+    margin-top: 12px;
+    background-color: #E8171F;
+    color: white;
+}
+
+.header-register {
+    padding-bottom: 30px;
+}
+
+.reminder {
+    font-size: 10pt;
+    color: #8B8D8E;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    /* Height of the footer */
+    background: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #dad8d3;
+    border-radius: 3px;
+    line-height: 14px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline-color: black;
+    color: black
+}
+
+
+/*---------------------------Class frame---------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url("../public/imgs/img_graduation.jpg");
+    height: 250px;
+    max-width: 100%;
+    padding: 0px;
+}
+
+.info-teacher {
+    min-width: 280px;
+    height: 400px;
+    background-color: #6b6969;
+}
+
+
+/*---------------------------People View---------------------------*/
+
+.person-line {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+.person {
+    height: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.person-another {
+    height: 56px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.line-count-member {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hr-line {
+    height: 1px;
+    border-width: 0;
+}
+
+
+/*---------------------------Forgot and Confirm Password---------------------------*/
+
+.line-tel-forgot-password {
+    min-width: 330px;
+}
+
+.txt {
+    font-size: 12px;
+}
+
+#form-confirm-password {
+    margin: auto;
+    max-width: 600px;
+    min-width: 350px;
+}
+
+#form-forgot-password {
+    margin: auto;
+    min-width: 350px;
+}
+
+/*---------------------------People View---------------------------*/
+.person-line {
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+}
+
+.person {
+    height: 48px;
+    font-size: 14px; font-weight: 500; color: #3c4043;
+}
+
+.person-another {
+    height: 56px;
+    font-size: 14px; font-weight: 500; color: #3c4043;
+}
+
+.line-count-member {
+    font-size: 14px; font-weight: 500;
+}
+
+.hr-line {
+    height:1px;
+    border-width:0;
+}
+
+
+/*---------------------------Forgot and Confirm Password---------------------------*/
+
+.line-tel-forgot-password {
+    min-width: 330px;
+}
+
+.txt {
+    font-size: 12px;
+}
+
+#form-confirm-password {
+    margin: auto;
+    max-width: 600px;
+    min-width: 350px;
+}
+
+#form-forgot-password {
+    margin: auto;
+    min-width: 350px;
+}
+
+.classroom {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #656b70
+}
+
+
+
+
+
+/*------------------------------ Phan bao loi --------------------------------*/
+.error-mess {
+    color: #E8171F;
+}
